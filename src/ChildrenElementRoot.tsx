@@ -12,10 +12,10 @@ export const getTestAsyncFunc = (id?: string): Promise<{ data?: string }> => {
     }))
 }
 
-export async function loader({ params }: LoaderFunctionArgs): Promise<{ data?: string }>{
+export async function loader({ params }: LoaderFunctionArgs): Promise<{ data?: string }> {
     const { data } = await getTestAsyncFunc(params.podcastId);
 
-    return {data};
+    return { data };
 }
 
 
