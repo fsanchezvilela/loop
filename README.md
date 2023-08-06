@@ -3,7 +3,9 @@
 ## Getting Started
 
 ### First Install the Node version
-
+>
+> note: before you run the developer enviroment, we use an script to check the right version in `.nvmrc`
+>
 #### Using NVM (Node Version Manager)
 
 ```bash
@@ -13,8 +15,6 @@ nvm use
 #### Download and install Node 18.15.0 from web
 
 - Download [Here](https://nodejs.org/dist/v18.15.0/)
-
-> note: before you run the developer enviroment, we use an script to check the right version in `.nvmrc`
 
 ### Second Install Dependencies
 
