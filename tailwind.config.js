@@ -22,7 +22,7 @@ export default {
         twitter:'#1DA1F2'
       },
       fontFamily: {
-        quicksand: 'Quicksand, sans-serif',
+        quicksand: ["Quicksand", "sans-serif"],
       }
     },
   },
