@@ -1,27 +1,87 @@
-# React + TypeScript + Vite
+# Loop The New Podcast Fun Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### First Install the Node version
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Using NVM (Node Version Manager)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+nvm use
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Download and install Node 18.15.0 from web
+
+- Download [Here](https://nodejs.org/dist/v18.15.0/)
+
+> note: before you run the developer enviroment, we use an script to check the right version in `.nvmrc`
+
+### Second Install Dependencies
+
+```bash
+pnpm init
+```
+
+Commands For Development:
+
+```bash
+pnpm run dev
+```
+
+Command for Build:
+
+```bash
+pnpm run build
+```
+
+Command for Test + Coverage
+
+```bash
+pnpm run test
+```
+
+Command for Code Style and Prettier Formating
+
+```bash
+pnpm run lint
+```
+
+```bash
+pnpm run lint:fix
+```
+
+```bash
+pnpm run format
+```
+
+## More information
+
+### Tech Stack
+
+- React
+- Typescript
+
+### Collaborative Layer
+
+- Eslint
+- Prettier
+- Husky (pre-commit + pre-push)
+
+### Tooling
+
+- Vite (SWC)
+- Rollup (Vite Bundler)
+
+## Test
+
+- Jest Unit Configuration
+- Jest Component (integration) Configuration
+- E2E Cypress (Comming soon)
+
+## Create with Vite
+
+Crate with [Vite](https://vitejs.dev/guide/)
+
+## Deploy on Vercel
+
+Deploy on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
