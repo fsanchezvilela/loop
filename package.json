@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "pnpm run lint --fix",
-    "format": "prettier --write './src/**/*'"
+    "format": "prettier --write './src/**/*'",
+    "generate:icons": "npx @svgr/cli public/assets/icons/svg --out-dir src/assets/components/icons --icon --typescript --replace-attr-values \"white=currentColor\""
   },
   "dependencies": {
     "install": "^0.13.0",

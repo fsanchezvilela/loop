@@ -4,7 +4,7 @@ import Root from './Root.tsx'
 import ErrorElementRoot from './ErrorElementRoot.tsx'
 import ChildrenElementRoot, { loader as loaderRoot } from './ChildrenElementRoot.tsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import './index.css'
+import './styles/global.css'
 
 const router = createBrowserRouter([
   {
