@@ -59,6 +59,13 @@ pnpm run lint:fix
 pnpm run format
 ```
 
+Command for generate React Icon SVG
+
+```bash
+pnpm run generate:icons
+```
+> note before you run the script we need to drop the svg icon file in this directory -> `public/icons/svg`
+
 ## More information
 
 ### Tech Stack
