@@ -1,3 +1,3 @@
-export interface IPodcast{
-  id: string
+export interface IPodcast {
+  id: string;
 }

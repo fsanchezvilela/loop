@@ -1,10 +1,8 @@
-import { FC } from "react"
-import type { ContentProps } from "./Content.type"
+import { FC } from 'react';
+import type { ContentProps } from './Content.type';
 
 const Content: FC<ContentProps> = ({ children }) => {
-    return (
-        <section>{children}</section>
-    )
-}
+  return <section>{children}</section>;
+};
 
-export default Content
+export default Content;

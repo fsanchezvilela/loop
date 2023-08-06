@@ -1,5 +1,5 @@
-import { IPodcast } from "../../domain/models/Podcast.types"
+import { IPodcast } from '../../domain/models/Podcast.types';
 
 export interface IPodcastServerData extends Readonly<IPodcast> {
-  id: IPodcast['id']
+  id: IPodcast['id'];
 }

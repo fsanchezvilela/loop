@@ -1,1 +1,1 @@
-export {default as mock, default} from './mock'
+export { default as mock, default } from './mock';

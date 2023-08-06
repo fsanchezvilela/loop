@@ -1,1 +1,1 @@
-export { default as homeRoutes, default } from './routes'
+export { default as homeRoutes, default } from './routes';

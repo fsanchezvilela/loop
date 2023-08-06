@@ -3,48 +3,47 @@
 @tailwind utilities;
 
 @font-face {
-      font-family: 'Quicksand';
-      src: url('/assets/fonts/quicksand/static/Quicksand-Light.ttf');
-      font-weight: 300;
-      font-display: swap;
-      font-style: normal;
-    }
+  font-family: "Quicksand";
+  src: url("/assets/fonts/quicksand/static/Quicksand-Light.ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
 
 @font-face {
-      font-family: 'Quicksand';
-      src: url('/assets/fonts/quicksand/static/Quicksand-Regular.ttf');
-      font-weight: 400;
-      font-display: swap;
-      font-style: normal;
-    }
+  font-family: "Quicksand";
+  src: url("/assets/fonts/quicksand/static/Quicksand-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/assets/fonts/quicksand/static/Quicksand-Medium.ttf');
+  font-family: "Quicksand";
+  src: url("/assets/fonts/quicksand/static/Quicksand-Medium.ttf");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/assets/fonts/quicksand/static/Quicksand-SemiBold.ttf');
+  font-family: "Quicksand";
+  src: url("/assets/fonts/quicksand/static/Quicksand-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/assets/fonts/quicksand/static/Quicksand-Bold.ttf');
+  font-family: "Quicksand";
+  src: url("/assets/fonts/quicksand/static/Quicksand-Bold.ttf");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
-
-@layer base{
-  :root{
+@layer base {
+  :root {
     background-color: red;
   }
 }

@@ -1,1 +1,1 @@
-export { default as ChildrenElementTest, default} from './ChildrenElementTest'
+export { default as ChildrenElementTest, default } from './ChildrenElementTest';
