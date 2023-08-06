@@ -2,7 +2,7 @@
 
 ## Live URL
 
-- [Production Application](https://loop-pod.vercel.app/):
+- [Production Application](https://loop-pod.vercel.app/)
 - [Figma URL](https://www.figma.com/file/bDI2O5GkLkOOx9Ne2khVBW/Free-Podcast-Player-Web-Design-(Community)?type=design&node-id=103-4&mode=design&t=EHQ3A17pVAJoOcmp-0)
 
 ## Getting Started
@@ -68,23 +68,26 @@ pnpm run format
 - [Tailwindcss](https://tailwindcss.com/)
 - [Radix-ui](https://www.radix-ui.com/)
 - [Figma](https://www.figma.com/)
+- [Jest](https://jestjs.io/)
+- [React-Testing-Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ### Collaborative Layer
 
-- Eslint
-- Prettier
-- Husky (pre-commit + pre-push)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/) (pre-commit + pre-push)
 
 ### Tooling
 
-- Vite (SWC)
-- Rollup (Vite Bundler)
+- [Vite](https://vitejs.dev/) (Tool)
+- [SWC](https://swc.rs/) (Rust-based Compiler)
+- [Rollup](https://rollupjs.org/) (Vite Bundler)
 
-## Test
+## Test Layer Configurations
 
-- Jest Unit Configuration
-- Jest Component (integration) Configuration
-- E2E Cypress (Comming soon)
+- Unit Test (Jest)
+- Component Test (React-Testing-Library)
+- E2E Test (Cypress) (Comming soon)
 
 ## Create with Vite
 
