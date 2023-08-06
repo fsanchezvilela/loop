@@ -1,6 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
+/* eslint-disable import/named */
 import { ChildrenElementTest } from '.';
 import { screen } from '@testing-library/react';
-import { renderWithRouter } from '../../../../../../../test/utils';
+import { renderWithRouter } from '../../../../../../test-utils';
 
 // 1- Mocking the hook using jest.fn
 const mockedUsedNavigate = jest.fn();

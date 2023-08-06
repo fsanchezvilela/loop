@@ -25,9 +25,20 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', '!vitest.config.ts'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json', './postcss.config.js'],
+    tsconfigRootDir: __dirname,
+  },
+  plugins: ['react-refresh', 'react', '@typescript-eslint', 'prettier'],
+  overrides: [
+    {
+      files: ['src/**/*.ts', 'src/**/*.tsx', 'vitest.config.ts'],
+    },
+  ],
   rules: {
     'at-rule-no-unknown': 'off',
     'scss/at-rule-no-unknown': 'off',

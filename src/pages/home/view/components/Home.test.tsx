@@ -1,6 +1,7 @@
+/* eslint-disable import/named */
 import { Home } from '.';
 import { screen } from '@testing-library/react';
-import { renderWithRouter } from '../../../../../test/utils';
+import { renderWithRouter } from '../../../../test-utils';
 
 describe('<Home>', () => {
   test('rendering a component that uses useLocation', () => {

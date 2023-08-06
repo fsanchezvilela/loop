@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 import { render, screen } from '@testing-library/react';
 import { Error } from '.';
 

@@ -22,5 +22,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", ".eslintrc.cjs","vite.config.ts","tailwind.config.js","postcss.config.js"] 
+  "include": ["src", "vitest.config.ts", ".eslintrc.cjs","tailwind.config.js","postcss.config.js"] 
 }
