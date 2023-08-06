@@ -4,7 +4,7 @@ import mockApi from '../api/mock'
 import { toPodcastDomain } from '../models/ToPodcastDomainTransformer'
 
 class PodcastRepository implements IPodcastRepository {
-    getPodcast = async (id?: string): Promise<IPodcast> => {
+    getPodcast = async (id: string): Promise<IPodcast> => {
         try {
             const data = await mockApi(id)
             return toPodcastDomain(data)

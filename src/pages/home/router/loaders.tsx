@@ -4,7 +4,7 @@ import { useCaseGetPodcastRouteLoader } from "../domain/use-cases"
 
 
 export interface IHomeRouteLoaders {
-    getPodcast(payload: LoaderFunctionArgs): Promise<IPodcast>
+    getPodcast(payload: LoaderFunctionArgs): Promise<IPodcast | null>
 }
 
 class HomeRouteLoaders implements IHomeRouteLoaders {

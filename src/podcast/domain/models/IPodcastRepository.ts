@@ -1,5 +1,5 @@
 import { IPodcast } from "./Podcast.types";
 
 export interface IPodcastRepository {
-    getPodcast(): Promise<IPodcast>
+    getPodcast(id:string): Promise<IPodcast>
 }
