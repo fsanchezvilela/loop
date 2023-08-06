@@ -1,11 +1,16 @@
-# Loop The New Podcast Fun Player
+# Loop The BEST Open Source Podcast Player
+
+## Live URL
+
+- [Production Application](https://loop-pod.vercel.app/):
+- [Figma URL](https://www.figma.com/file/bDI2O5GkLkOOx9Ne2khVBW/Free-Podcast-Player-Web-Design-(Community)?type=design&node-id=103-4&mode=design&t=EHQ3A17pVAJoOcmp-0)
 
 ## Getting Started
 
 ### First Install the Node version
->
+
 > note: before you run the developer enviroment, we use an script to check the right version in `.nvmrc`
->
+
 #### Using NVM (Node Version Manager)
 
 ```bash
@@ -58,8 +63,11 @@ pnpm run format
 
 ### Tech Stack
 
-- React
-- Typescript
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Radix-ui](https://www.radix-ui.com/)
+- [Figma](https://www.figma.com/)
 
 ### Collaborative Layer
 
