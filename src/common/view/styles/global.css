@@ -44,6 +44,13 @@
 
 @layer base {
   :root {
-    background-color: red;
+    --main-bg-linear-gradient-start: 0deg, theme(colors.roman-silver-20) 0%,
+      theme(colors.roman-silver-20) 100%;
+
+    --main-bg-linear-gradient-end: 155deg, theme(colors.charcoal) 0%,
+      theme(colors.charcoal-tint) 100%;
+
+    background: linear-gradient(var(--main-bg-linear-gradient-start)),
+      linear-gradient(var(--main-bg-linear-gradient-end));
   }
 }

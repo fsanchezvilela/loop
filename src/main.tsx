@@ -6,7 +6,6 @@ import { Layout } from './common/view/components/layout';
 import './common/view/styles/global.css';
 
 const router = createBrowserRouter([...homeRoutes]);
-console.log(router);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
