@@ -1,5 +1,4 @@
 import { IPodcastServerData } from '../models/Podcast';
-import { nanoid } from 'nanoid';
 
 // Server mock
 export async function mockApi(id: string): Promise<IPodcastServerData> {
@@ -23,7 +22,7 @@ export async function getDataHomeTablePersenterApiMock(): Promise<
   return new Promise((resolve, reject) => {
     resolve(
       new Array(50).fill(null).map(() => ({
-        id: nanoid(),
+        id: '1' + Math.random() * 1000,
         description: Math.random() * 1000,
         released: 'pending',
         name: 'idk@example.com',

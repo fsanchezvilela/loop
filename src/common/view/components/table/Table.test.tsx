@@ -1,10 +1,10 @@
 /* eslint-disable import/named */
 import { render, screen } from '@testing-library/react';
-import TableHeader from './TableHeader';
+import Table from './Table';
 
-describe('<TableHeader>', () => {
+describe('<Table>', () => {
   test('Render Component', () => {
-    render(<TableHeader>test</TableHeader>);
+    render(<Table>test</Table>);
 
     expect(screen.getByText('test')).toBeInTheDocument();
   });

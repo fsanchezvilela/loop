@@ -1,5 +1,5 @@
 /* eslint-disable import/named */
-import { Home } from '.';
+import Home from './Home';
 import { screen } from '@testing-library/react';
 import { renderWithRouter } from '../../../../test-utils';
 
