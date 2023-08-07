@@ -1,4 +1,4 @@
-export interface IPodcast {
+export interface HomeDataTableUIPersenter {
   id: string;
   description: number;
   released: string;

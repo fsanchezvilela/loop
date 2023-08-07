@@ -12,3 +12,9 @@ export async function useCaseGetPodcastRouteLoader({
   const podcast = await repository.getPodcast(params.podcastId);
   return podcast;
 }
+
+export async function useGetDataCollectionPodcast(): Promise<IPodcast[]> {
+  const repository = new PodcastRepository();
+  const podcast = await repository.getPodcastCollections();
+  return podcast;
+}

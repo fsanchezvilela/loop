@@ -32,6 +32,7 @@ module.exports = {
     'commitlint.config.cjs',
     'jest.config.cjs',
     'config/*/**',
+    '@/*',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

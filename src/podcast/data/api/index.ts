@@ -1,1 +1,1 @@
-export { default as mock, default } from './mock';
+export { mockApi, getDataHomeTablePersenterApiMock } from './mock';
