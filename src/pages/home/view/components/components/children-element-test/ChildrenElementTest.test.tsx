@@ -18,7 +18,7 @@ jest.mock('react-router-dom', () => ({
   useLoaderData: () => mockedUsedNavigate,
 }));
 
-describe('<Home>', () => {
+describe('<ChildrenElementTest>', () => {
   test('rendering a component that uses useLocation', () => {
     const route = '/podcast/1';
     renderWithRouter(<ChildrenElementTest />, { route });

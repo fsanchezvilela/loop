@@ -6,10 +6,10 @@ describe('<Content>', () => {
   test('Render Component', () => {
     render(
       <Content>
-        <h1>test</h1>
+        <h1 data-test-id="test">test</h1>
       </Content>,
     );
 
-    expect(screen.findByText('test')).toBeInTheDocument();
+    expect(screen.getByText('test')).toBeInTheDocument();
   });
 });
