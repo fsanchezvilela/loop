@@ -1,3 +1,4 @@
 module.exports = {
-  '**/*.{js,ts,tsx,json,jsx}': ['pnpm run format'],
+  '*.{js,jsx,ts,tsx}': ['eslint --quiet --fix'],
+  '*.{js,ts,jsx,tsx}': ['prettier --write --ignore-unknown'],
 };
