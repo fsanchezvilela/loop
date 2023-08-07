@@ -25,7 +25,14 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['dist', '.eslintrc.cjs', '!vitest.config.ts'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    '!vitest.config.ts',
+    'commitlint.config.cjs',
+    'jest.config.cjs',
+    'config/*/**',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
