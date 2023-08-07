@@ -23,27 +23,22 @@ const Home: FC = () => {
         <DataTable columns={columns} data={data} />
       </div>
 
-      <div className="flex flex-auto flex-col gap-3">
+      <div className="my-3 flex flex-auto flex-col gap-3">
         <Link to={`/1`}>Children Nav to 1</Link>
         <Link to={`/2`}>Children Nav to 2</Link>
       </div>
-      <div className="flex flex-auto flex-col gap-3">
+      <div className="my-3 flex flex-auto flex-col gap-3">
         <Link to={`podcast/1`}>Page Nav to 1</Link>
         <Link to={`podcast/2`}>Page Nav to 2</Link>
       </div>
-      <h1 className="text-3xl font-bold underline">´Vite + React</h1>
-      <div className="card">
+
+      <div className="card my-3">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/Root.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <div id="detail">
+
+      <div id="detail" className="my-3">
         <Outlet />
       </div>
     </Content>
