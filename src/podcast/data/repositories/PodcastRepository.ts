@@ -1,4 +1,4 @@
-import { type IPodcastRepository } from '../../domain/models/IPodcastRepository';
+import { type IPodcastRepository } from '../../domain/models/PodcastRepository.interfaces';
 import { IPodcast } from '../../domain/models/Podcast.types';
 import { mockApi, getDataHomeTablePersenterApiMock } from '../api/mock';
 import {
