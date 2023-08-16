@@ -37,9 +37,7 @@ dist-ssr
 *.pem
 
 # local env files
-.env*.local
-.env
-.env.development
+
 
 # vercel
 .vercel
