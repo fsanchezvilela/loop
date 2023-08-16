@@ -29,6 +29,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "lib": ["WebWorker"],
   "include": [
     "src",
     "vitest.config.ts",

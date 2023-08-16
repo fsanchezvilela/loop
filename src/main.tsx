@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { homeRoutes } from './pages/home/router';
+import { loginRoutes } from './pages/login/router';
 import { Layout } from './common/view/components/layout';
 import './common/view/styles/global.css';
+
 // Create Router Client
-const router = createBrowserRouter([...homeRoutes]);
+const router = createBrowserRouter([...homeRoutes, ...loginRoutes]);
 // Create a Query client
 const queryClient = new QueryClient();
 
