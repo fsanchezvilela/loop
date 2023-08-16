@@ -2,10 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import type { HttpClientBaseHeader, HttpClientBaseStatusCode } from './index';
 import {
-  HttpClientBaseHeader,
   HttpClientBaseMehod,
-  HttpClientBaseStatusCode,
   HttpStatusCode,
   IHttpClientBase,
 } from './HttpClientBase.interfaces';
@@ -29,7 +28,7 @@ export class HttpClientBase implements IHttpClientBase {
     };
 
     if (httpHeader) {
-      requestInit.headers = httpHeader as any;
+      requestInit.headers = httpHeader as never;
     }
 
     if (requestData) {

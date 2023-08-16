@@ -1,17 +1,9 @@
+import { HttpClientBaseHeader, HttpClientBaseStatusCode } from './index';
+
 export enum HttpClientBaseMehod {
   POST = 'POST',
   GET = 'GET',
   PUT = 'PUT',
-}
-
-export interface HttpClientBaseHeader {
-  'Content-Type': string;
-  Authorization?: string;
-}
-
-export interface HttpClientBaseStatusCode {
-  statusCode: number;
-  statusText: HttpStatusCode;
 }
 
 export enum HttpStatusCode {
@@ -82,7 +74,7 @@ export interface IHttpClientBase {
   createRequest: (
     url: string,
     method: HttpClientBaseMehod,
-    httpHeader?: HttpClientBaseHeader | undefined,
+    httpHeader?: HttpClientBaseHeader,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     requestData?: any,
   ) => Promise<this>;
