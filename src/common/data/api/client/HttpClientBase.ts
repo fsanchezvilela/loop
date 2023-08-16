@@ -14,7 +14,7 @@ export class HttpClientBase implements IHttpClientBase {
   private respBody: any;
 
   constructor() {
-    this.resp = new Response();
+    this.resp = {} as Response;
   }
 
   async createRequest(
