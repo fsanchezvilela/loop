@@ -17,8 +17,8 @@ export class AuthHttpClientApi extends HttpClientBase {
 
   constructor() {
     super();
-    this.client_id = import.meta.env.SPOTIFY_CLIENT_ID;
-    this.client_secret = import.meta.env.SPOTIFY_CLIENT_SECRET;
+    this.client_id = process.env.VITE_SPOTIFY_CLIENT_ID;
+    this.client_secret = process.env.VITE_SPOTIFY_CLIENT_SECRET;
     this.authQuery = Buffer.from(
       this.client_id + ':' + this.client_secret,
     ).toString('base64');
