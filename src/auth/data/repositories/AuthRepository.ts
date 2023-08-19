@@ -48,7 +48,7 @@ class AuthRepository implements IAuthRepository {
       client_id: this.client_id,
       code_verifier: codeVerifier,
     });
-    console.log({ body });
+    console.log({ body: body.entries() });
     this.authHttpClient
       .post<SpotifyAuthResponse>('https://accounts.spotify.com/api/token', body)
       .then((response) => {
