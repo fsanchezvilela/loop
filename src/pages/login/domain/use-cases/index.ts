@@ -11,7 +11,6 @@ export function caseLoginAuthAtSpotify(props: LoaderFunctionArgs): null {
 
   if (!props.request.url.includes('code')) {
     repository.connectToSpotify();
-    return null;
   }
 
   const urlParams = new URLSearchParams(window.location.search);
