@@ -32,7 +32,12 @@ export class HttpClientBase implements IHttpClientBase {
     }
 
     if (requestData) {
-      requestInit.body = JSON.stringify(requestData);
+      if (httpHeader?.['Content-Type'].includes('x-www-form-urlencoded')) {
+        requestInit.body = requestData;
+      } else {
+        requestInit.body = JSON.stringify(requestData);
+      }
+      console.log(requestInit);
     }
 
     this.resp = await fetch(url, requestInit);

@@ -42,7 +42,7 @@ class AuthRepository implements IAuthRepository {
   }
   generateSpotifyAccessToken({ code, codeVerifier }: SpotifyAuthCode): void {
     const body = new URLSearchParams({
-      grant_type: 'client_credentials',
+      grant_type: 'authorization_code',
       code,
       redirect_uri: this.redirect_uri,
       client_id: this.client_id,
@@ -50,10 +50,7 @@ class AuthRepository implements IAuthRepository {
     });
     console.log({ body: [...body.values()] });
     this.authHttpClient
-      .post<SpotifyAuthResponse>(
-        'https://accounts.spotify.com/api/token?',
-        body,
-      )
+      .post<SpotifyAuthResponse>('https://accounts.spotify.com/api/token', body)
       .then((response) => {
         if (!response.isOk) {
           throw new Error('Error Status ');

@@ -13,6 +13,7 @@ export function caseLoginAuthAtSpotify(props: LoaderFunctionArgs): null {
     repository.connectToSpotify();
     return null;
   }
+
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code') ?? '';
   const codeVerifier = localStorage.getItem('code_verifier') ?? '';
