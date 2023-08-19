@@ -50,7 +50,10 @@ class AuthRepository implements IAuthRepository {
     });
     console.log({ body: [...body.values()] });
     this.authHttpClient
-      .post<SpotifyAuthResponse>('https://accounts.spotify.com/api/token', body)
+      .post<SpotifyAuthResponse>(
+        'https://accounts.spotify.com/api/token?grant_type=client_credentials',
+        body,
+      )
       .then((response) => {
         if (!response.isOk) {
           throw new Error('Error Status ');
