@@ -18,4 +18,5 @@ export function caseLoginAuthAtSpotify(props: LoaderFunctionArgs): null {
     console.log(repository.getTokens());
     return null;
   }
+  return null;
 }
