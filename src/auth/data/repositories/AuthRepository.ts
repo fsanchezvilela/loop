@@ -67,7 +67,7 @@ class AuthRepository implements IAuthRepository {
   }
   refreshSpotifyAccessToken(): void {
     const body = new URLSearchParams({
-      grant_type: 'refresh_token.',
+      grant_type: 'refresh_token',
       refresh_token: this.refresh_token,
       client_id: this.client_id,
     });
