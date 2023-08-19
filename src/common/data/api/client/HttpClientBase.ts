@@ -33,7 +33,7 @@ export class HttpClientBase implements IHttpClientBase {
 
     if (requestData) {
       if (httpHeader?.['Content-Type'].includes('x-www-form-urlencoded')) {
-        requestInit.body = requestData;
+        requestInit.body = requestData.toString();
       } else {
         requestInit.body = JSON.stringify(requestData);
       }
