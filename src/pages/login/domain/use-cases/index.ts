@@ -11,12 +11,11 @@ export function caseLoginAuthAtSpotify(props: LoaderFunctionArgs): null {
 
   if (!props.request.url.includes('code')) {
     repository.connectToSpotify();
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code') ?? '';
+    const codeVerifier = localStorage.getItem('code_verifier') ?? '';
+    repository.generateSpotifyAccessToken({ code, codeVerifier });
+    console.log(repository.getTokens());
+    return null;
   }
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const code = urlParams.get('code') ?? '';
-  const codeVerifier = localStorage.getItem('code_verifier') ?? '';
-  repository.generateSpotifyAccessToken({ code, codeVerifier });
-  console.log(repository.getTokens());
-  return null;
 }
