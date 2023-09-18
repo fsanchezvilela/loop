@@ -4,7 +4,7 @@ import { Content } from '../../../../common/view/components/content';
 const Error: FC = () => {
   return (
     <Content>
-      <div>Error on Render</div>
+      <div>Error on Render hola</div>
     </Content>
   );
 };
